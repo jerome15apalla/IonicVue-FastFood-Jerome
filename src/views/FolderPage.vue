@@ -3,7 +3,7 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-buttons slot="start">
-          <ion-menu-button color="primary"></ion-menu-button>
+          <ion-menu-button color="warning"></ion-menu-button>
         </ion-buttons>
         <ion-title>{{ $route.params.id }}</ion-title>
       </ion-toolbar>
@@ -18,7 +18,6 @@
 
       <div id="container">
         <strong class="capitalize">{{ $route.params.id }}</strong>
-        <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
     </ion-content>
   </ion-page>
@@ -52,5 +51,6 @@ import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, Io
 
 #container a {
   text-decoration: none;
+  color: warning;
 }
 </style>
